@@ -1,0 +1,282 @@
+@import url(//fonts.googleapis.com/css?family=Vibur);
+
+body{
+    overflow-x: hidden;
+    margin:0px;
+    padding:0px;
+}
+nav{
+    display:flex;
+    justify-content: center;
+    margin-top:100px;
+}
+
+
+.logo b, .logo2 b{
+padding:40px;
+  font: 100 10vh "Vibur";
+  color: #fee;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+}
+.logo b span{ 
+  animation: blink linear infinite 2s;
+}
+.logo2 b span{
+    animation: blink linear infinite 2.5s;
+}
+@keyframes blink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  79%{
+     color: #333;
+  }
+  80% {
+    
+    text-shadow: none;
+  }
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: #333;
+    text-shadow: none;
+  }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}
+
+
+.containerWork{
+    height:100%;
+    background-color:#F7F7F7; 
+}
+.containerIndex{
+     margin:0px;
+    padding:0px;
+    background-image: url("images/lurm-358339-unsplash.jpg");
+    height:100vh;
+    background-size: cover;
+
+
+}
+
+header {
+    text-align: center;
+}
+
+h2 {
+    margin: 0px;
+    text-decoration: blink;
+    font-size: 1.8em;
+    letter-spacing: 2px;
+    font-family: 'Amatic SC', cursive;
+}
+
+
+.logoName{
+text-align: center;
+    padding:10px;
+
+}
+.logoName img{
+    padding-top:40px;
+    width:50%;
+    color:white;
+}
+
+
+li {
+    list-style: none;
+    margin: 80px;
+    font-family: Abril Fatface, cursive;
+    font-size: 2em;
+    color:white;
+}
+
+a{
+text-decoration: none;
+}
+    
+.underline {
+  position: relative;
+}
+.underline:hover,
+.underline:focus,
+.underline:active {
+  cursor: pointer;
+}
+.underline:hover:after,
+.underline:focus:after,
+.underline:active:after{
+  width: 100%;
+}
+.underline:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 3px;
+  background-color: white;
+  width: 0;
+  -webkit-transition: width .4s;
+  transition: width .4s;
+}
+
+
+.wrapper{
+margin:50px;
+    
+}
+.work{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    }
+.box1,.box2,.box3,.box4,.box5,.box6,.box7{
+    padding:10px;
+    text-align: center;
+    
+}
+.box1 img, .box2 img, .box3 img, .box4 img{
+    max-width:100%;
+    max-height:100%;
+    
+}
+.box5 img, .box7{
+    width:100%;
+    height:auto;
+}
+.box6 img{
+ width: 70%;
+}
+.back{
+   font-family: Amatic SC, cursive;
+    font-size:2em;
+    padding:10px;
+    text-align: left;
+
+}
+
+.back a{
+    color:black;
+}
+
+
+h2{
+    margin:50px;
+    font-family: Abril Fatface, cursive;
+}
+
+
+.containerAbout{
+    display:flex;
+    justify-content: center;
+}
+.aboutMe{
+    background-color:#F0F0F0;
+    width:350px;
+    height:500px;
+    border-radius:8px;
+    text-align: center;
+    padding:30px 40px;
+    margin:50px 50px;
+
+}
+.aboutMe img{
+    border-radius:10px;
+    width:100%;
+    
+}
+.aboutMe h2{
+    font-family:Pacifico;
+}
+
+.aboutMe p, a{
+    font-family: Montserrat;
+
+}
+
+
+a{
+    color:#D24523;
+
+}
+
+
+@media only screen and (min-width: 752px){
+    
+.containerAbout{
+   margin:20px 20px;
+
+    }
+.logoName img{
+    padding-top:70px;
+        width:15%;
+    }
+.logoName img:hover{
+    cursor:pointer;
+}
+.back img{
+    width:10%;
+        
+}
+.back a:hover{
+   color: #D24523;
+    cursor:pointer;
+}
+ a{
+        cursor:pointer;
+    }
+.box1,.box2,.box3,.box4{
+    flex:1;
+    padding:10px;
+    text-align: center;
+    
+}
+.box5,.box6,.box7,.box8{ 
+        padding:10px;
+        text-align: left;
+        
+    }
+.box5 img, .box7 img{
+    width:50%;
+    height:auto;
+}
+.box6 img{
+    width:15%;
+    height:auto;
+}
+.aboutMe{
+        margin-bottom:30px;
+        margin:0px;
+    }
+.aboutMe img{
+    border-radius:10px;
+    width:70%;
+    
+}
+.aboutMe h2{
+    font-family:Pacifico;
+    margin:30px;
+}
+
+.aboutMe p{
+    font-family: Montserrat;
+
+}
+
+}
