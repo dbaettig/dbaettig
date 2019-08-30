@@ -59,7 +59,7 @@ padding:40px;
 }
 
 
-.containerWork{
+body, .containerWork{
     height:100%;
     background-color:#F7F7F7; 
 }
